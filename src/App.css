@@ -1,0 +1,83 @@
+html{
+  box-sizing: border-box;
+}
+
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font: 12px 'Quicksand', sans-serif;
+}
+
+.small-bold{
+  font: bold 10px 'Quicksand', sans-serif;
+}
+
+.medium-bold{
+  font: bold 11px 'Quicksand', sans-serif;
+}
+
+.pagination{
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.pagination li{
+  line-height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  text-align: center;
+}
+.pagination li a{
+  color: #000;
+}
+.pagination li{
+  cursor: pointer;
+}
+.pagination li.active{
+  background-color: #000;
+  cursor: default;
+}
+.pagination li.disabled{
+  visibility: hidden;
+}
+.pagination li.active a{
+  color: #fff;
+  cursor: default;
+}
+.pagination li.active a:hover, .pagination li.break-me a:hover{
+  text-decoration: none;
+}
+.dynamic-header{
+  display : none;
+}
+.dynamic-footer{
+  display: block;
+}
+.black-text li{
+  margin: 0 12px;
+  font-size: 11px;
+}
+.black-text li a{
+  color: #000;
+  text-decoration: none;
+}
+.no-topMargin .alice-carousel__dots{
+  margin-top : 0;
+}
+@media only screen and (max-width : 992px){
+  header .form-inline .form-control{
+    width : 100%;
+  }
+  header .form-inline .btn{
+    display: none;
+  }
+  .dynamic-header{
+    display: inline-block;
+  }
+  .dynamic-footer{
+    display: none;
+  }
+}

@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import { Col, Card, CardImg, CardText, CardBody} from 'reactstrap';
-import {Link} from 'react-router-dom';
+import React, { Component } from 'react';
+import { Col, Card, CardImg, CardText, CardBody } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 
 class CardProduct extends Component {
@@ -46,7 +46,7 @@ class CardProduct extends Component {
     // onMouseOver={() => this.handleMouseOver(item, isChange)} onMouseLeave={() => this.handleMouseLeave(item, isChange)} 
 
     render(){
-        const {item, md, lg, sm, xs, isChange} = this.props;
+        const { item, md, lg, sm, xs, isChange } = this.props;
         const { img } = this.state;
         return (
             <Col xs={xs} sm={sm} md={md} lg={lg} className={isChange ? "px-2 mb-5" : "px-2 mb-2"} >
